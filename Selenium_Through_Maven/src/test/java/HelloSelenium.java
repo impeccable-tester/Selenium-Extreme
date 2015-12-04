@@ -15,4 +15,12 @@ public class HelloSelenium {
         assertTrue(driver.getTitle().equals("Google"));
         driver.quit();
     }
+
+    @Test
+    public void yahooTest(){
+        FirefoxDriver driver = new FirefoxDriver();
+        driver.navigate().to("http://www.Yahoo.com");
+        assertTrue(driver.getTitle().equals("Yahoo7"));
+        driver.quit();
+    }
 }
